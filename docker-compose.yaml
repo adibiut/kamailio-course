@@ -51,7 +51,7 @@ services:
       dockerfile: Dockerfile
     container_name: rtpengine-edge
     ports:
-      - "23000-23100:23000-23100"
+      - "16384-16483:16384-16483/udp"
     volumes:
       - ./rtpengine-edge/config:/etc/rtpengine
     networks:
